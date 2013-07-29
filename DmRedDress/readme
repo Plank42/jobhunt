@@ -1,0 +1,32 @@
+Author: Andrew Newton
+Date: 29/07/2013
+
+Task
+Please write some automated tests to test the website 'Search' function of http://www.shopstyle.com based on the following requirements:
+
+1. Focus just on the search keyword - 'red dress'. The URL for this search is http://www.shopstyle.com/browse/dresses?fts=red+dress
+2. Only test for the country - 'US'
+3. Just test the top 10 results for the fields 'name', 'retailer name' and 'price'
+4. Confirm the search results independently using the RESTful JSON based API call - http://api.shopstyle.com/api/v2/products?pid=uid6784-22493972-77&fts=red+dress&offset=0&limit=10&
+
+Please package all of the source files and libraries into a zip/tar.gz file and send it back to us. Please also include a readme file to include any notes on how to run your tests.
+
+
+Process to run
+- The DmRedDress/lib should contain all required jars
+- To run the tests open the project in an appropriate IDE - intellij or eclipse
+- Check that an appropriate plug-in for Junit is installed
+- Locate the file Shopstyle.java in file:///home/andrew/Documents/dev/DmRedDress/src/test/dress/fixture/ShopStyle.java
+- Select test testSSSearch
+In Eclipse
+  - Open the New wizard (File > New > JUnit Test Case).
+  - Select New JUnit 3 test and enter "testSSSearch" as the name of your test class:
+  - You may see a warning message asking you to add the junit library to the build path. Use the Click here link to add the junit library automatically.
+  - Click Finish to create the test class.
+  - To run TestFailure hit the run button in the toolbar. It will automatically run as JUnit Test.
+In Intellij
+  - Highlight the package test.dress.fixture in the Project view
+  - press Ctrl-Shift-F10
+  - The testSSSearch should now run.
+
+Note: public ErrorCollector collector= new ErrorCollector() has been used to ensure that all tests are run and their failures recorded at the end of the test.
