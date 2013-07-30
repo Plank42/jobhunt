@@ -19,7 +19,7 @@ public class ShopStyle extends BaseFixture{
     public ErrorCollector collector= new ErrorCollector();
 
     @Test
-	public void testSSSearch() throws Exception {
+    public void testSSSearch() throws Exception {
 
 	        searchForItem(searchTerm);
 	        selectCountry(locale);
@@ -49,5 +49,5 @@ public class ShopStyle extends BaseFixture{
 	        }
 	
 	
-		}
+    }
 }
