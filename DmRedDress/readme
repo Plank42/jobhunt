@@ -11,6 +11,28 @@ Please write some automated tests to test the website 'Search' function of http:
 
 Please package all of the source files and libraries into a zip/tar.gz file and send it back to us. Please also include a readme file to include any notes on how to run your tests.
 
+PLEASE NOTE: There have been some issues with invalid ZIP archive errors for some of the library contents
+In particular:
+!MESSAGE Invalid ZIP archive: lib/com.springsource.org.apache.commons.codec-1.3.0.jar [in DmRedDress]
+!MESSAGE Invalid ZIP archive: lib/com.springsource.org.apache.commons.httpclient-3.1.0.jar [in DmRedDress]
+!MESSAGE Invalid ZIP archive: lib/com.springsource.org.apache.commons.logging-1.1.1.jar [in DmRedDress]
+!MESSAGE Invalid ZIP archive: lib/commons-httpclient-3.0.1.jar [in DmRedDress]
+!MESSAGE Invalid ZIP archive: lib/hamcrest-core-1.3.jar [in DmRedDress]
+!MESSAGE Invalid ZIP archive: lib/protobuf-java-2.4.1.jar [in DmRedDress]
+!MESSAGE Invalid ZIP archive: lib/selenium-server-standalone-2.32.0.jar [in DmRedDress]
+
+As a result, these jars may need to be downloaded separately.
+Access http://search.maven.org/ or http://mvnrepository.com/
+and search for the following (separately)
+- org.apache.commons.httpclient-3.1.0
+- org.apache.commons.codec-1.3.0
+- org.apache.commons.logging-1.1.1
+- hamcrest-core-1.3
+- commons-httpclient-3.0.1
+- protobuf-java-2.4.1
+Finally, selenium standalone is available from http://docs.seleniumhq.org/download/
+- selenium-server-standalone-2.32.0
+
 
 Process to run
 - The DmRedDress/lib should contain all required jars
