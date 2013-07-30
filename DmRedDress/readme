@@ -19,12 +19,29 @@ Process to run
 - Locate the file Shopstyle.java in file:///home/andrew/Documents/dev/DmRedDress/src/test/dress/fixture/ShopStyle.java
 - Select test testSSSearch
 In Eclipse
+ - Add the libraries to the Project
+  - Right Click the Project folder > select properties 
+  - Select Java Build Path & libraries tab
+  - Click on add jars/add external jars and navigate to the projects lib/ folder
+  - Highlight all jars and click ok
+  - Build Project
+ - To run the test 
   - Open the New wizard (File > New > JUnit Test Case).
   - Select New JUnit 3 test and enter "testSSSearch" as the name of your test class:
   - You may see a warning message asking you to add the junit library to the build path. Use the Click here link to add the junit library automatically.
   - Click Finish to create the test class.
   - To run TestFailure hit the run button in the toolbar. It will automatically run as JUnit Test.
 In Intellij
+ - Add the libraries to the Project
+   - Open Project settings
+   - Choose Modules 
+   - Select the Dependencies tab and select add
+   - Choose Libraru from the Add dropdown options, choose "Library". 
+   - In the new dialog 
+   - Press "New Library..." and add a title
+   - Click on Attach Classes and choose the Jar from your libs/ directory, and press OK to finish.
+   - Build Project
+ - Run the Test
   - Highlight the package test.dress.fixture in the Project view
   - press Ctrl-Shift-F10
   - The testSSSearch should now run.
